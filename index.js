@@ -1,11 +1,8 @@
 module.exports = {
-  root: true,
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: "es2020", // Allows for the parsing of modern ECMAScript features
     sourceType: "module", // Allows for the use of imports
-    tsconfigRootDir: "./",
-    project: './tsconfig.json',
 
   },
   plugins: [
