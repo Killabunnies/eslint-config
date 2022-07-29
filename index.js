@@ -5,6 +5,7 @@ module.exports = {
     sourceType: "module", // Allows for the use of imports
 
   },
+  ignorePatterns: ['.*rc.js', '*.config.js', '*.config.*.js'],
   plugins: [
     '@typescript-eslint',
 
