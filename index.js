@@ -17,17 +17,6 @@ module.exports = {
   ],
 
   rules: {
-    "prettier/prettier": [
-      "error",
-      {
-        semi: true,
-        trailingComma: "es5",
-        singleQuote: false,
-        printWidth: 180,
-        tabWidth: 4,
-        useTabs: true,
-      }
-    ],
     "spaced-comment": ["warn", "always", { "block": { "balanced": true, "exceptions": ["/"] }, }],
     "@typescript-eslint/no-unsafe-return": "off",
 
@@ -64,7 +53,17 @@ module.exports = {
     "@typescript-eslint/no-unsafe-assignment": "off",
     "@typescript-eslint/unbound-method": "off", //pixijs binds differently to .bind
     "@typescript-eslint/no-unsafe-argument": "off",
-    "prettier/prettier": "warn",
+    "prettier/prettier": [
+      "warn",
+      {
+        semi: true,
+        trailingComma: "es5",
+        singleQuote: false,
+        printWidth: 180,
+        tabWidth: 4,
+        useTabs: true,
+      }
+    ],
 
     "@typescript-eslint/no-misused-promises": [
       "error",
