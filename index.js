@@ -17,6 +17,17 @@ module.exports = {
   ],
 
   rules: {
+    "prettier/prettier": [
+      "error",
+      {
+        semi: true,
+        trailingComma: "es5",
+        singleQuote: false,
+        printWidth: 180,
+        tabWidth: 4,
+        useTabs: true,
+      }
+    ],
     "spaced-comment": ["warn", "always", { "block": { "balanced": true, "exceptions": ["/"] }, }],
     "@typescript-eslint/no-unsafe-return": "off",
 
