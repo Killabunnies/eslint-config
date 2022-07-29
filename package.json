@@ -1,6 +1,6 @@
 {
   "name": "@killabunnies/eslint-config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "ESLint config for Killabunnies",
   "main": "index.js",
   "repository": {
