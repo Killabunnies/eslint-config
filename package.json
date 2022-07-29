@@ -1,0 +1,36 @@
+{
+  "name": "@killabunnies/eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint config for Killabunnies",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/killabunnies/eslint-config.git"
+  },
+  "keywords": [
+    "Killabunnies",
+    "eslint-config"
+  ],
+  "author": "Milton Candelero <mcandelero@killabunnies.com.ar>",
+  "bugs": {
+    "url": "https://github.com/killabunnies/eslint-config/issues"
+  },
+  "homepage": "https://killabunnies.com.ar",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1"
+  },
+  "devDependencies": {
+    "eslint": ">=8.0.0",
+    "typescript": ">=4.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0",
+    "typescript": ">=4.0.0"
+  }
+}
