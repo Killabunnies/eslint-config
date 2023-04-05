@@ -17,6 +17,7 @@ module.exports = {
   ],
 
   rules: {
+    "@typescript-eslint/consistent-type-imports": "error",
     "spaced-comment": ["warn", "always", { "block": { "balanced": true, "exceptions": ["/"] }, }],
     "@typescript-eslint/no-unsafe-return": "off",
 
