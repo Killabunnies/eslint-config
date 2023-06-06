@@ -18,6 +18,8 @@ module.exports = {
 
   rules: {
     "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/no-import-type-side-effects": "error",
+
     "spaced-comment": ["warn", "always", { "block": { "balanced": true, "exceptions": ["/"] }, }],
     "@typescript-eslint/no-unsafe-return": "off",
 
