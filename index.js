@@ -17,6 +17,7 @@ module.exports = {
   ],
 
   rules: {
+    "@typescript-eslint/no-explicit-any": "off", // We are not ready yet
     "@typescript-eslint/consistent-type-imports": "error",
     "@typescript-eslint/no-import-type-side-effects": "error",
 
