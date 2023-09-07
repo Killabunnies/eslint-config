@@ -74,8 +74,36 @@ module.exports = {
       {
         "checksVoidReturn": false
       }
-    ]
+    ],
 
-  },
+    "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/no-import-type-side-effects": "error",
 
+    // I trust ts
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+
+    //I don't understand it
+    "@typescript-eslint/no-namespace": "off",
+
+    // enums don't work with this
+    "@typescript-eslint/no-unsafe-enum-comparison": "off",
+
+    //
+    "@typescript-eslint/ban-types": ["error",
+      {
+        extendDefaults: true,
+        types: {
+          Function: {
+            message: [
+              'The `Function` type accepts any function-like value.',
+              'It provides no type safety when calling the function, which can be a common source of bugs.',
+              'It also accepts things like class declarations, which will throw at runtime as they will not be called with `new`.',
+              'If you are expecting the function to accept certain arguments, you should explicitly define the function shape.',
+            ].join('\n'),
+            fixWith: '() => void',
+          },
+        }
+      }]
+  }
 };
